@@ -1,0 +1,86 @@
+*{margin:0;
+    padding:0;
+    }/*não deixar que os itens da pagína atinjam as estremidades*/
+    
+    hr{
+        display: block;/*não permite movimentação da linha*/
+        margin-top: 0.2em;/*espaçamento entre o topo da marge*/
+        margin-bottom: 0.2em;/*espaçamento entre a parte de baixo*/
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset; /*estilo da borda*/
+        border-width: 1px; /*largura da borda*/
+        border-color: rgb(255, 5, 159);/*cor da borda*/
+    }
+    
+    header img{/*definições da imagem que estão dentro do cabeçalho*/
+        width: 100px;/*largura da imagem*/
+        height: 100px;/*altura da imagem*/
+        margin: 10px;/*margem da imagem*/    
+    }
+    
+    header h1{/*definições do titulo que estão dentro do cabeçalho*/
+    color:black; /*cor do texto*/
+    -webkit-text-stroke: 2px rgb(255, 0, 157); /*contorno do texto*/
+    padding-top: 30px;/*espaçamento entre o topo e o texto*/
+    }
+    #menu ul{/*ID para lista*/
+    list-style: none;/*sem nenhum estilo na lista, tira os pontos*/
+    margin-left: 250px;}
+
+    #menu li{
+        position: relative;
+    }
+    #menu li a{
+        color:rgb(0, 0, 0);/*cor do texto do menu*/
+        text-decoration: none;/*sem estilo no texto*/
+        padding: 5px 10px;/*espaçamento entre os textos no menu*/
+        display: block;/*opções do menu bloqueadas na posição atual*/
+    }
+    #menu li a:hover{
+        background: rgb(255, 0, 157); /*fundo do efeito*/
+        color:rgb(1, 1, 1); /*cor do texto no efeito*/
+        text-shadow: 0px 0px 5px rgb(0, 0, 0);/*sombra do efeito*/
+    }
+    #menu li ul{
+        position: absolute;
+        top: 25px;/*espaçamento do topo*/
+        left: 0;/*espaçamento da esquerda*/
+        background-color: aliceblue;
+        display: none;
+    }
+    #menu li:hover ul, #menu li.over ul{
+        display: block;/*durante o efeito não movera o menu*/
+    }
+    header, #menu, #menu ul{
+        display: flex;
+    }
+
+    #menu{
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    footer hr {
+        margin-top: 1000px;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px; /*Largura da borda*/
+        border-color: rgb(0, 0, 0); /*Cor da borda*/
+      }
+    
+    
+      footer img{
+        width: 50px;
+        height: 50px;
+        margin-right: 200px;
+        }
+        footer h3{
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: 2px rgb(75, 85, 84);
+        margin-right: 200px;
+        padding-bottom: 15px;
+        }
+    
